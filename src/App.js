@@ -1,14 +1,14 @@
-class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-        Hello {this.props.name}
-      </div>
-    );
-  }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-  <HelloMessage name="Taylor" />,
-  document.getElementById('hello-example')
-);
+class HelloWorld extends React.Component {
+    render() {
+        return (
+            <div>
+                Hello, React!
+                  </div>
+        )
+    }
+};
+
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));

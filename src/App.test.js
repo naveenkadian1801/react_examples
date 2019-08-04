@@ -1,9 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+const shoppingList = [
+  'diapers',
+  'kleenex',
+  'trash bags',
+  'paper towels',
+  'beer',
+];
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test('the shopping list has beer on it', () => {
+  expect(shoppingList).toContain('beer');
+  expect(new Set(shoppingList)).toContain('beer');
 });

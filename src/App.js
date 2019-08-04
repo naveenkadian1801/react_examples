@@ -1,4 +1,4 @@
-// Importing combination 
+// Importing combinations
 import React, { Component } from 'react';
 // Importing Module 
 import ReactDOM from 'react-dom';

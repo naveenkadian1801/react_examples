@@ -21,5 +21,6 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    npm install --save-dev jest
     npm test
-  displayName: 'jest testing'
+  displayName: 'Jest installation and testing'
